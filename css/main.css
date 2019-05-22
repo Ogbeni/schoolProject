@@ -1,0 +1,164 @@
+        *{
+	    	box-sizing: border-box;
+	    }
+	    .row::after{
+	    	content: "";
+		    clear: both;
+		    display: block;
+	    }
+    	[class*=col-]{
+    		float: left;
+		    padding: 15px;
+		    /*border: 1px solid #146941;*/
+    	}
+        html{
+            scroll-behavior: smooth;
+        }
+    	body{
+    		color: black;
+            margin: "0";
+    		/*background-image: url("images/1.jpeg");
+    		background-repeat: no-repeat;
+    		background-size: cover;*/
+    	}
+    	input, textarea, button{
+    		height: 40px;
+    		border-style: solid;
+    		border-width: 1px;
+    		border-color: #00116020;
+    		width: 100%;
+    		color: white;
+    		transition: 2s;
+    		color: black;
+            margin-bottom: 10px;
+
+    	}
+    	textarea{
+    		height: 80px;
+    	}
+    	input:focus, textarea:focus{
+    		border-color: #001160;
+    		box-shadow:0 0 5px #001160;
+    		background-color: #001160;
+    		color: white;
+    	}
+        button:hover{
+            cursor: pointer;
+            font-style: italic;
+            border-radius: 15px;
+            box-shadow: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        #map_container{
+            height: 400px; left: 0;position: fixed; display: none;
+            z-index: 3;
+        }
+        .nav-bar{
+            margin: 0;
+            position: fixed;
+            color: #fff;
+            background-color: #001160;
+            transition: 2s;
+            z-index: 1;
+        }
+        .note-pane{
+            background-color: #ff0060;
+            color: #fff;
+            text-transform:uppercase;
+            text-align: center;padding: 5%;
+            position: fixed;
+            z-index: 2;
+            margin-top: -100%;
+            transition: 2s;
+        }
+         .reg_hosp:hover{
+            cursor: pointer;
+            background-color: #fff;
+            color: #001160;
+        }
+        .map_icon{
+            position: fixed; 
+            top: 20%; 
+            right: -3%; 
+            text-align: center;
+            transition: 2s;
+            max-width: 100px;
+        }
+        .map_icon:hover{
+            cursor: pointer;
+            right: 0%; 
+        }
+        .close_map{
+            text-align: center;
+        }
+        .close_map:hover{
+            cursor: pointer;
+        }
+        .reg_hosp{
+            position: fixed; 
+            top: 90%; 
+            right: 5%; 
+            background-color: #001160; 
+            text-align: center;
+            color: #fff;
+            box-shadow:0 0 5px #001160;
+            transition: 2s;
+            width: 15%;
+        }
+    	.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+
+		.col-offset-1 {margin-left: 4.16%;}
+		.col-offset-2 {margin-left: 8.33%;}
+		.col-offset-3 {margin-left: 12.5%;}
+		.col-offset-4 {margin-left: 16.66%;}
+		.col-offset-5 {margin-left: 20.83%;}
+		.col-offset-6 {margin-left: 25%;}
+		.col-offset-7 {margin-left: 29.16%;}
+		.col-offset-8 {margin-left: 33.33%;}
+		.col-offset-9 {margin-left: 37.5%;}
+		.col-offset-10 {margin-left: 41.66%;}
+		.col-offset-11 {margin-left: 45.5%;}
+		.col-offset-12 {margin-left: 50%;}
+
+		@media only screen and (max-width: 768px){
+			[class*=col-]{
+    		width: 80%;
+    		margin-left: 10%;
+    		}
+    		input{
+    			width: 80%;
+    			margin-left: 10%;
+    			border:1;
+    		}
+            .reg_hosp{
+                width: 50%;
+                top: 92%;
+            }
+            .map_icon{
+            top: 20%; 
+            right: 3%; 
+            z-index: 3;
+            max-width: 70px;
+            }
+            .logo{
+                display: none;
+            }
+            #map_container, #map_canvas{
+                width: 100%;
+                margin: 0;
+            }
+	   }

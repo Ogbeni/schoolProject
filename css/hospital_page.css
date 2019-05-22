@@ -1,0 +1,97 @@
+.dept{
+    		margin-bottom: 10px;
+    		background-color: #001160;
+    		color: #fff;
+    		
+    	}
+
+    	.spec{
+    		display: none;
+    		position: absolute;
+    		margin-left: 15px;
+    		margin-top: 15px;
+    		padding: 0;
+    		background-color: #524bba;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    	}
+    	.spec a{
+    		display: block;
+    		position: relative;
+    		padding: 10px;
+    		text-decoration: none;
+    	}
+    	.spec a:hover{
+    		background-color: #f1f1f1;
+    		color: #001160;
+    	}
+    	.dept:hover .spec{
+    		display: block;
+    		position: absolute;
+    	}
+    	.first_hidden{
+    		display: none; position: fixed; background-color: rgba(100,100,100,5); margin-top: 80px;
+            z-index: 3;
+    	}
+    	.nav-bar{
+			margin: 0;
+
+			color: #fff;
+			background-color: #001160;
+			transition: 2s;
+		}
+		.add_dept{
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.dept_container_head, #spec_container{
+			background-color: #001160;
+			color: #fff;
+		}
+		.dept_container_head{
+			padding: 0;
+			margin: 0;
+			margin-bottom: 2%;
+		}
+		#date_container, #profile_container{
+			background-color: #ffffff50;
+		}
+		#spec_container_out{
+			background-color: #00116050;
+		}
+		#add_new_dept{
+			border: 1px solid #fff;
+			transition: 2s;
+			background-color: #079222;
+		}
+		.logout{
+			border: 1px solid #fff;
+			transition: 2s;
+			background-color: #ff000080;
+		}
+		#add_new_dept:hover, .logout:hover{
+			cursor: pointer;
+			background: #fff;
+			color: #001160;
+		}
+		.add_dept_m{
+
+		}
+		@media only screen and (max-width: 850px){
+			[class*=col-]{
+    		width: 80%;
+    		margin-left: 10%;
+    		}
+    		input{
+    			width: 80%;
+    			margin-left: 10%;
+    			border:1;
+    		}
+    		.nav-bar,#dept_container, .main_div_body, .dept_container_head, .add_dept_m, #dept_container, #spec_container, #date_container, #spec_container_out, #profile_container, .logo{
+    			width: 100%;
+    			margin: 0;
+    		}
+    		#spec_container_out{
+    			padding-left: 0;
+    			padding-right: 0;
+    		}
+		}

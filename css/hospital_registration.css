@@ -1,0 +1,63 @@
+.add-department:hover{
+			cursor: pointer;
+			background-color: #fff;
+			color: #001160;
+		}
+		.dept_item{
+			background-color: #00116050; 
+			box-shadow:0 0 5px #001160;
+			width: 49.5%;
+			margin-left: 0.5%;
+			margin-bottom: 1%;
+		}
+		.spec_item{
+			background-color: #001160; 
+			box-shadow:0 0 5px #fff;
+			border-radius: 5px;
+			width: 49%;
+			margin-left: 1%;
+			margin-bottom: 1%;
+		}
+		#dept_container{
+			position: relative;
+		}
+		#spec_container{
+			position: relative;
+		}
+		.close_it{
+			background-color: #ff0000;
+			height: auto;
+			
+		}
+		.close_it:hover{
+			color: #fff;
+			cursor: pointer;
+
+		}
+		.hosp_container{
+				background-color: #001160;
+			}
+		@media only screen and (max-width: 850px){
+			input, .logo, .nav-bar, #tmp_hosp_name, #dept_container_button, #dept_container, .dept_item, .input-body, #spec_container{
+				width: 100%;
+				margin:0;
+				text-align: center;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.hosp_container{
+				margin: 2%; padding: 2%;
+				width: 96%;
+			}
+			.dept_item{
+				margin-bottom: 2%;
+			}
+			.close_it{
+			background-color: red;
+			padding: 1%;
+			position: absolute;
+			width: 5%;
+			margin-left: 0;
+			color: #fff;
+		}
+		}
